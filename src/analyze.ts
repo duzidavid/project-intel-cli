@@ -1,4 +1,4 @@
-import path from 'node:path';
+import path from 'path';
 import { analyzeProject } from 'project-intel-core';
 import { renderSummary } from './renderSummary.js';
 

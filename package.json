@@ -1,21 +1,19 @@
 {
   "name": "project-intel-cli",
   "version": "0.1.0",
-  "private": true,
-  "type": "module",
+  "type": "commonjs",
   "bin": {
-    "project-intel": "./dist/index.js"
+    "project-intel": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node src/index.ts"
+    "start": "node dist/index.js"
   },
   "dependencies": {
-    "project-intel-core": "file:../project-intel-core"
+    "project-intel-core": "^0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
-    "ts-node": "^10.9.2",
     "@types/node": "^25.1.0"
   }
 }
